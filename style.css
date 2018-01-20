@@ -5,35 +5,100 @@ body{
 .container{
     height: 800px;
     width: 100%;
-    background-color: aqua;
+    background-color: white;
 }
 .up{
     width: 100%;
     height: 100px;
-    background-color: chartreuse;
+
 }
 .left{
-    width: 15%;
+    width: 25%;
     height: 600px;
     float: left;
-    background-color: brown;
+
 }
 .center{
-    width: 70%;
+    width: 50%;
     height: 600px;
     float: left;
-    background-color: coral;
+
 }
 .right{
-    width: 15%;
+    width: 25%;
     height: 600px;
     float: left;
-    background-color: chocolate;
+
 }
 .footer{
     width: 100%;
     height: 100px;
     clear: both;
-    background-color: darkorange;
+    text-align: center;
+}
+.footer-text{
+    font-size: 16px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+.month{
+    border: solid black 2px;
+    margin-top: 30px;
+    margin-left: 45%;
+    width: 100px;
+    height: 30px;
+    background-color: mediumspringgreen;
+}
+.year{
+    border: solid black 2px;
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    background-color: mediumspringgreen;
+}
+table {
+    border-collapse: collapse;
+
 
 }
+#table-header {
+    margin-top: 15%;
+    background-color: grey;
+
+}
+.table-header-month{
+    border: 1px solid black;
+    border-bottom-width: 0px;
+    width: 100px;
+
+    
+}
+.table-header-year{
+    border: 1px solid black;
+    border-bottom-width: 0px;
+
+}
+#table-data{
+    border: 1px solid black;
+
+}
+
+th{
+    border: 1px solid black;
+    width: 50px;
+    height: 20px;
+    font-weight: normal;
+}
+.day-0{
+    width: 90px;
+}
+
+.day-6, .day-7, .day-13, .day-14, .row-1-day-6, .row-1-day-7, .row-2-day-6, .row-2-day-7, .row-3-day-6, .row-3-day-7
+, .row-4-day-6, .row-4-day-7, .row-5-day-6, .row-5-day-7, .row-1-day-13, .row-1-day-14, .row-2-day-13, .row-2-day-14
+, .row-3-day-13, .row-3-day-14, .row-4-day-13, .row-4-day-14, .row-5-day-13, .row-5-day-14
+{
+    background-color: lightgrey;
+}
+
+
+
