@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    font-family: Calibri;
+}
+.container{
+    height: 800px;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+.left{
+    width: 15%;
+    height: 800px;
+    float: left;
+
+}
+.center{
+    width: 70%;
+    height: 800px;
+    float: left;
+    text-align: center;
+
+}
+.right{
+    width: 15%;
+    height: 800px;
+    float: left;
+
+}
+.your-name{
+    margin-top: 300px;
+
+}
+
+.your-name-submit{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: mediumspringgreen;
+
+}
+
+.your-name-submit:hover{
+    background-color: #00af6b;
+
+}
