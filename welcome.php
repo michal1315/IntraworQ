@@ -1,10 +1,6 @@
 <?php
 
-$your_name = $_POST["your-name"]
-
-
-
-
+$your_name = $_POST["your-name"];
 
 ?>
 
@@ -17,7 +13,7 @@ $your_name = $_POST["your-name"]
     <meta charset="UTF-8">
     <title>Witaj</title>
     <link rel="stylesheet" href="styles/style-welcome.css">
-    <meta http-equiv="refresh" content="5; URL=table.php">
+    <meta http-equiv="refresh" content="3; URL=db_login.php">
 
 </head>
 <body>
@@ -30,7 +26,9 @@ $your_name = $_POST["your-name"]
         <h1 class="your-name">
             Witaj
             <?php
+
             echo $your_name
+
             ?>
         </h1>
 

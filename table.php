@@ -1,3 +1,16 @@
+
+
+<?php
+
+require_once "database-connect.php";
+
+
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -13,6 +26,7 @@
 
 
     <div class="up">
+
 
         <select class="month" name="month">
             <option value="january">Styczeń</option>
@@ -47,6 +61,9 @@
                 <th class="table-header-year"></th>
             </tr>
         </table>
+
+
+        <form></form>
 
         <table id="table-data">
             <tr>
@@ -157,6 +174,7 @@
 
 
         </table>
+        </form>
 
 
 
@@ -173,3 +191,5 @@
 </div>
 </body>
 </html>
+
+

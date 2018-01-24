@@ -15,6 +15,7 @@
         <h1 class="your-name">
             Podaj swoje imię
         </h1>
+
         <form action="welcome.php" method="post">
 
             <input class="your-name-input" type="text" name="your-name"/>
