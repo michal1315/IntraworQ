@@ -13,19 +13,19 @@ body{
 
 }
 .left{
-    width: 25%;
+    width: 20%;
     height: 600px;
     float: left;
 
 }
 .center{
-    width: 50%;
+    width: 60%;
     height: 600px;
     float: left;
 
 }
 .right{
-    width: 25%;
+    width: 20%;
     height: 600px;
     float: left;
 
@@ -96,7 +96,7 @@ th{
     font-weight: normal;
 }
 .day-0{
-    width: 90px;
+    width: 150px;
 }
 
 .day-6, .day-7, .day-13, .day-14, .row-1-day-6, .row-1-day-7, .row-2-day-6, .row-2-day-7, .row-3-day-6, .row-3-day-7

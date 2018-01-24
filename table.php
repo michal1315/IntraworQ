@@ -4,6 +4,33 @@
 
 require_once "database-connect.php";
 
+$connection = @new mysqli($host, $db_user, $db_pass, $db_name);
+
+if($connection->connect_errno!=0)
+{
+    echo "Error: ".$connection->connect_errno;
+}
+
+//user id 1 mysql read
+$user1 = mysqli_query($connection, "select * from user where id=1 ");
+$row1 = mysqli_fetch_assoc($user1);
+
+//user id 2 mysql read
+$user2 = mysqli_query($connection, "select * from user where id=2 ");
+$row2 = mysqli_fetch_assoc($user2);
+
+//user id 3 mysql read
+$user3 = mysqli_query($connection, "select * from user where id=3 ");
+$row3 = mysqli_fetch_assoc($user3);
+
+//user id 4 mysql read
+$user4 = mysqli_query($connection, "select * from user where id=4 ");
+$row4 = mysqli_fetch_assoc($user4);
+
+//user id 5 mysql read
+$user5 = mysqli_query($connection, "select * from user where id=5 ");
+$row5 = mysqli_fetch_assoc($user5);
+
 
 
 
@@ -63,7 +90,7 @@ require_once "database-connect.php";
         </table>
 
 
-        <form></form>
+
 
         <table id="table-data">
             <tr>
@@ -84,8 +111,11 @@ require_once "database-connect.php";
                 <th class="day-13">13</th>
                 <th class="day-14">14</th>
             </tr>
+
+            <form>
+
             <tr>
-                <th class="row-1-day-0"></th>
+                <th class="row-1-day-0"><?php echo $row1['name']; ?></th>
                 <th class="row-1-day-1"></th>
                 <th class="row-1-day-2"></th>
                 <th class="row-1-day-3"></th>
@@ -102,7 +132,7 @@ require_once "database-connect.php";
                 <th class="row-1-day-14"></th>
             </tr>
             <tr>
-                <th class="row-2-day-0"></th>
+                <th class="row-2-day-0"><?php echo $row2['name']; ?></th>
                 <th class="row-2-day-1"></th>
                 <th class="row-2-day-2"></th>
                 <th class="row-2-day-3"></th>
@@ -119,7 +149,7 @@ require_once "database-connect.php";
                 <th class="row-2-day-14"></th>
             </tr>
             <tr>
-                <th class="row-3-day-0"></th>
+                <th class="row-3-day-0"><?php echo $row3['name']; ?></th>
                 <th class="row-3-day-1"></th>
                 <th class="row-3-day-2"></th>
                 <th class="row-3-day-3"></th>
@@ -136,7 +166,7 @@ require_once "database-connect.php";
                 <th class="row-3-day-14"></th>
             </tr>
             <tr>
-                <th class="row-4-day-0"></th>
+                <th class="row-4-day-0"><?php echo $row4['name']; ?></th>
                 <th class="row-4-day-1"></th>
                 <th class="row-4-day-2"></th>
                 <th class="row-4-day-3"></th>
@@ -153,7 +183,7 @@ require_once "database-connect.php";
                 <th class="row-4-day-14"></th>
             </tr>
             <tr>
-                <th class="row-5-day-0"></th>
+                <th class="row-5-day-0"><?php echo $row5['name']; ?></th>
                 <th class="row-5-day-1"></th>
                 <th class="row-5-day-2"></th>
                 <th class="row-5-day-3"></th>
@@ -171,6 +201,9 @@ require_once "database-connect.php";
             </tr>
 
 
+                <input class="change_" type="submit" value="Potwierdź zmiany"/>
+
+            </form>
 
 
         </table>
