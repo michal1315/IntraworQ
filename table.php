@@ -112,7 +112,7 @@ $row5 = mysqli_fetch_assoc($user5);
                 <th class="day-14">14</th>
             </tr>
 
-            <form>
+            <form action="save_change.php" method="post">
 
             <tr>
                 <th class="row-1-day-0"><?php echo $row1['name']; ?></th>
@@ -201,13 +201,13 @@ $row5 = mysqli_fetch_assoc($user5);
             </tr>
 
 
-                <input class="change_" type="submit" value="Potwierdź zmiany"/>
+                <input class="change_day_data" type="submit" value="Potwierdź zmiany"/>
 
             </form>
 
 
         </table>
-        </form>
+
 
 
 
